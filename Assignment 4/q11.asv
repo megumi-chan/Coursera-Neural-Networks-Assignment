@@ -1,0 +1,5 @@
+function ret = q11(rbm_w)
+    
+    A = dec2bin(0:2^10-1)-'0';
+    ret = sum(prod((rbm_w'*A'), 2));
+end
